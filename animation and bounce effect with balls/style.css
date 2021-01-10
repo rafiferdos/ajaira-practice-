@@ -1,0 +1,41 @@
+@keyframes spin {
+  0% {
+    left: 10px;
+    top: 0px;
+  }
+  20% {
+    left: 40px;
+    top: 50px;
+  }
+  30% {
+    left: 300px;
+    top: 400px;
+  }
+  60%{
+    left: 500px;
+    top: 200px;
+  }
+  90% {
+    left: 900px;
+    top: 500px;
+  }
+  100% {
+    left: 100px;
+    top: 600px;
+  }
+}
+.stage {
+  background-color: grey;
+  height: 200px;
+  min-width: 800px;
+}
+.ball {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-color: red;
+  position: absolute;
+}
+.stage:hover .ball {
+  animation: spin 6s ease-out 1s infinite alternate;
+}
